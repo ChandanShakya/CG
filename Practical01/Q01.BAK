@@ -1,0 +1,25 @@
+// Q1.
+// Write a program to draw a line, rectangle and circle.
+// Take necessary parameters from the user.
+// Use the graphics.h header file.
+
+#include <graphics.h>
+
+int main()
+{
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "C:\\TC\\BGI");
+
+    // Line
+    line(100, 100, 200, 200);
+
+    // Rectangle
+    rectangle(100, 100, 200, 200);
+
+    // Circle
+    circle(100, 100, 50);
+
+    getch();
+    closegraph();
+    return 0;
+}

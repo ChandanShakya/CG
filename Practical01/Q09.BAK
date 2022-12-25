@@ -1,0 +1,22 @@
+// Program to draw a semicircle and U shaped circle in C
+// Using graphics.h library
+
+#include <graphics.h>
+#include <conio.h>
+
+int main()
+{
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "C:\\TC\BGI");
+
+    // Draw a semicircle
+    arc(200, 200, 0, 180, 100);
+
+    // Draw a U shaped circle
+    arc(200, 200, 180, 360, 100);
+    arc(200, 200, 0, 180, 50);
+
+    getch();
+    closegraph();
+    return 0;
+}
