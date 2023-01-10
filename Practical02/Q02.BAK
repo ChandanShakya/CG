@@ -1,6 +1,8 @@
 // Write a program to scale a circle 4 times of its size taking other necessary coordinates from users
 
 #include <graphics.h>
+#include <stdio.h>
+#include <conio.h>
 #include <math.h>
 
 void main()
